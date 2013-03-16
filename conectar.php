@@ -12,5 +12,13 @@ $db = $mysql_config["name"];
 $link = mysql_connect("$hostname:$port", $username, $password);
 $db_selected = mysql_select_db($db, $link);
 
+$consulta = "SELECT * FROM usuarios";
+$resultado = mysql_query($consulta,$link);
+
+$vector = mysql_fetch_array($resultado);
+
+echo var_dump ($vector);
+
+
 
 ?>
