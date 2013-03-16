@@ -17,7 +17,7 @@ $resultado = mysql_query($consulta,$link);
 
 $vector = mysql_fetch_array($resultado);
 
-echo var_dump ($vector);
+echo var_dump ($resultado);
 
 
 
