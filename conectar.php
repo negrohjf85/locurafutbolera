@@ -15,9 +15,12 @@ $db_selected = mysql_select_db($db, $link);
 $consulta = "SELECT * FROM usuarios";
 $resultado = mysql_query($consulta,$link);
 
-$vector = mysql_fetch_array($resultado);
+while ($row = mysql_fetch_array($resultado)){
+	
+	echo var_dump ($row);	
+};
 
-echo var_dump ($resultado);
+
 
 
 
